@@ -1,0 +1,215 @@
+Challenge 2
+
+Section 0 - Introduction
+
+0.1 What to expect from this course 3m 6s
+Question: What is the intended purpose and potential advantage of learning object oriented design?
+Answer: Object Oriented Design gives us blueprints and structure to build from. It is a set of ideas that will bring clarity to programming.
+
+0.2 Exploring object-oriented analysis, design, and development 1m 41s
+Question: Why might it be advantageous to analyze and design before beginning programming?
+Answer: Once you break down and understand what you are trying to accomplish and create, it will then be easier to execute on it. I see it as building a house. It would be much easier if you gathered the information about what the house needs to be, planned what it was going to look like, and then broke it down into parts before you started to build it. It makes more sense that way.
+
+0.3 Reviewing software development methodologies 4m 8s
+Question 1: What is the difference between a "waterfall" and an "agile" approach to development? 
+Answer 1: Waterfall development is a step-by-step plan, where you would complete one step before continuing onto another. This doesn't work because if changes or issues arrise in the later steps, it may make earlier steps irrelevant. The agile/iterative approach is much more flexible when issues or changes arrise. It is development that continues over time, in cycles or phases. It allows for you to design something that works and continually make adjustments to it until it is to the desired level.
+
+Question 2: What is an iteration and how do we to use them to build software?
+Answer 2: Iterations are small changes made over time to an existing project. In software this would allow you build things in parts, test them, make changes, and make the project better over time.
+
+
+Section 1 - Core Concepts
+
+1.1 Why we use object-orientation 2m 42s
+Question: What are the various types of programming languages and in which domain is each used?
+Answer: Object Oriented is used for practical applications like web mobile and desktop apps as well as games. Procedural languages are not used as much because they are not as manageable as programs got larger and more complex. Logic and Functional languages are used in the academic world or in very specific cases. 
+
+1.2 What is an object? 5m 22s
+Question: Describe in your own words the three properties of a computing object.
+Answer: Identity is the property of an object that allows us differentiate it from another object; wether it is of the same type or different. Attributes of an object are the properties that define it, similar to traits or properties. Behaviors are tasks or actions that an object is able to perform.
+
+1.3 What is a class? 4m 43s
+Question: Explain how classes are analogous to blueprints. Include the relationship between a class and an object. Can you think of how the analogy breaks down?
+Answer: A class defines what an object will be; similar to how a blueprint of a house explains to the builder how the house is supposed look once it is built. If you wanted to build the same exact house, you already have the blueprint drawn up. The same goes for when you need another object; the class has already been defined so it can be reused as many times as needed.
+
+1.4 What is abstraction? 2m 45s
+Question: When a developer uses the term "abstraction" what are they describing?
+Answer: They are describing what a certain class should look like for a given application, defining only the essential attributes and behaviors.
+
+1.5 What is encapsulation? 3m 45s
+Question: What does encapsulation prevent? What does it enable?
+Answer: Encapsulation prevents others parts of an application from changing a class's attributes without first going through the object itself. It is meant to hide data to keep interactions within an application simple and prevent issues down the road. You hide as much as possible, making only the most necessary things to be exposed. It enables the reduction of dependencies that, if changed in once place, won't need to be changed throughout the entire program.
+
+1.6 What is inheritance? 3m 35s
+Question: Describe the inheritance relationship between classes. When would this relationship be advantageous to establish?
+Answer: Inheritance allows a programmer to grab attributes and behaviors from one class and reuse them in another. We can then add onto this child class with the attributes or behaviors that we want but didn't want to include in the parent class.
+
+1.7 What is polymorphism? 3m 22s
+Question: What is the basic idea behind polymorphism? How can it make the classes we create more flexible?
+Answer: Polymorphism is the ability for use to create something with more than one form. It allows us to call the same methods inherited from a parent class to a child class, but it will adapt in the backend for all the conditions that come along with the child class. It automatically chooses the correct version of that method to perform at the correct time.
+
+
+Section 2 - Object-Oriented Analysis and Design
+
+2.1 Understanding the object-oriented analysis and design processes 4m 13s
+Question 1: What are the steps of analysis that come before writing code for an application?
+Answer 1: 
+1) Gather your Requirements - define what the app is going to do and what is the problem that we are trying to solve. 
+2) Describe the application on a personal level through use cases and user stories - it may change later and you may want to create a mockup or prototype at this time. 
+3) Identify the most important objects - using the descriptions we put together we can then point out the most important things we need within the application; some of these may not become classes. 
+4) Describe the interactions between those objects - object relationships within the app; also outlines what attributes and behaviors objects need to have - possibly create a "sequence diagram". 
+5) Create a Class Diagram - a visual representation of the classes we need. This helps plan out all the building blocks of the class and the interactions between objects.
+
+Question 2: Why do you think these steps make writing the code easier?
+Answer 2: We are outlining basically all the things we will need and essentially laying the framework for our application. As you start fleshing out and defining all these items you can see what needs to be done on the coding side.
+
+2.2 Defining requirements 6m 9s
+Question: What should you have after you've completed the first phase of defining your requirements?
+Answer: You should have a specific, written list of the requirements surrounding your app. The information does not need to be extensive or even complete because we will be iterating on it and changing it over time. This allows us to move onto the next step of describing our app in a use case.
+
+2.3 Introduction to the Unified Modeling Language (UML) 1m 54s
+Question: What is UML? Why Is it useful to visualize your application before coding it?
+Answer: UML is a graphical visualization system meant for diagramming an Object Oriented system. Essentially it gives us a way to quickly sketch up ideas before doing full-blown code. This allows us to plan things out without wasting time and resources.
+
+
+Section 3 - Utilizing Use Cases
+
+3.1 Understanding use cases 6m 11s
+Question: Write a use case for creating an event on your phone's calendar.
+Answer: 
+Title: Create new calendar event
+Actor: User
+Scenario: 1. User wants to schedule an event on their calendar
+2. User creates a new event
+3. User types in a name for the event
+4. User enters in the start time and date
+5. User enters in the end time and date
+6. User adds in optional location and description
+7. User is able to choose to set a reminder and the time it will display before the event
+8. User is able to set it to re-occur and how often it should re-occur
+9. User saves Event
+10. Calendar stores the Event information
+11. If reminder was set, user will receive a reminder at the set time
+
+3.2 Identifying the actors 4m 16s
+Question: Can you think of a use case for a mobile application in which the actor is not the user of the mobile device?
+Answer: Any application that is accessed from a server (like a mail client) has external actors as well as the user of the mobile device. Finding an application that is nearly exclusively accessed by an external actor is a bit more difficult. One I have used in passed is a program called AirDroid. It allows the user to access AirDroid on their Mobile Device from a computer to receive data about the mobile device and perform many actions like accessing the GPS or the Camera. All of this is done remotely, away from the device itself. Any device locator software (like LoJack) also fits into this category as they access the device from a remote location and not from the device itself.
+
+3.3 Identifying the scenarios 5m 7s
+Question: Write another use case for a mobile device user interacting with a calendar application. This time include a couple extensions when crafting your scenario.
+Answer: 
+Title: Create new calendar event
+Actor: User
+Scenario: 1. User wants to schedule an event on their calendar
+2. User creates a new event
+3. User types in a name for the event
+4. User enters in the start time and date
+5. User enters in the end time and date
+6. User adds in optional location and description
+7. User is able to choose to set a reminder and the time it will display before the event
+8. User is able to set it to re-occur and how often it should re-occur
+9. User saves Event
+10. Calendar stores the Event information
+11. If reminder was set, user will receive a reminder at the set time
+Extensions:
+1. The Event is scheduled at the same time as another event
+	(a) User can edit the start/end time and date
+	(b) User can delete the event entirely
+2. The User wants to cancel the event
+	(a) User can select the event and delete it
+3. The User wants to add, edit, or remove a reminder
+	(a) Edit the event
+	(b) Add, remove, or change the reminder time
+	
+3.4 Diagramming use cases 4m 18s
+Question: Do a google image search for "use case diagram." Notice how many variations there are. What do they all generally have in common?
+Answer: Visually speaking, they all have the stick-figure actors and the various use cases within elipses that are being pointed to from those actors that interact with them. I also see that many of them section off or sort use cases into groups beyond just blocking out the entire system.
+
+3.5 Employing user stories 3m 43s
+Question: Write 5 user stories to describe a mobile user interacting with his or her maps application.
+Answer:
+1. As a commuter, I want to be able to get bus routes in my maps app so that I don't need to look up those routes elsewhere.
+2. As a driver, I want to have traffic flows listed so I can avoid the slow-down areas.
+3. As a delivery person, I want to have pictures of the destination so I know which building to drop the package at.
+4. As a driver, I want my maps app's navigation to audibly tell me when to turn so I don't have to look at the device.
+5. As a user, I want to be able to save locations and directions so I can use them again in the future.
+
+
+Section 4 - Domain Modeling (Modeling the App) 
+
+4.1 Creating a conceptual model 1m 59s
+Just let it soak in. No questions here.
+
+4.2 Identifying the classes 2m 27s
+Question: Identify the classes in the use case you constructed for a user interacting with his or her calendar application in chapter 3.
+Answer:
+User
+Calendar
+Event
+Start Time
+Start Date
+End Time
+End Date
+Reminder
+
+4.3 Identifying class relationships 2m 38s
+Question: Identify the relationships among the classes you found above. 
+Answer: User accesses the Calendar/ User creates Event/ User sets Reminder
+The Calendar contains the Event
+Event has a Start/End Time and Date/ Event has Attendees
+Reminder reminds User of the Event
+
+Create a conceptual model where you diagram these relationships and then upload a picture of your model below.
+
+4.4 Identifying class responsibilities 6m 43s
+Question: Identify the responsibilities of the classes you found above. List them here.
+Answer: 
+User - Creates Event
+Calendar - Stores Event information
+Event - Contains Description, Location Start/End time + date, Get Reminder Time, Set to Re-Occur
+Start Time - Controls when the Event Starts in Time
+End Time - Controls when the Event Ends in Time
+Start Date - Controls what day the Event Starts
+End Date - Controls what day the Event Ends
+Reminder - Controls the Reminder time
+
+4.5 Using CRC cards 2m 49s
+If you'd like, try creating CRC cards for the model you made above. There's no need to respond here, just try it out and see if you like this form of organization.
+
+
+Section 5 - Creating Classes
+
+5.1 Creating class diagrams 6m 11s
+Construct Class Diagrams for the classes you imagine exist in a twitter app, a maps app, a calendar app, or any other app you would like to make. 
+
+Question: Do you find that it is easier to come up with the attributes or with the behaviors? Why do you think that is?
+Answer: I think it is easier to come up with the Attributes of these imagined classes because they are out of context of the entire application. Attributes are the parts of a Class and this is fairly easy to imagine. The Behaviors require more information about other classes, their interactions, and the bigger picture of the application itself. It is harder to establish what these particular classes actually perform within the application.
+
+5.2 Converting class diagrams to code 4m 57s
+Question: How might the separation of interface and implementation in Objective-C be an advantage when working with class diagrams?
+Answer: It seems like the interface section would store the declaration of information for the class while the implementation would house the executed code. So you could establish your interface using the information from the diagrams even before actually writing the code within the implementation layer.
+
+5.3 Exploring object lifetime 5m 55s
+Question: What are the constructors and destructors in Objective-C? Why do we use them?
+Answer: We use alloc and init ([[Object alloc] init]) for the constructor and dealloc is the destructor. Alloc is allocating the memory and init is initializing the variables within it. Dealloc is there to free up the resources that were allocated to the object.
+
+5.4 Using static or shared members 5m 22s
+Question: Like the interest rate example in the video, give three additional examples of data that would be the same for all instances of a class.
+Answer:
+1. Sales Tax
+2. Current Date or Time
+3. Items remaining in stock
+
+
+Section 6 - Inheritance and Composition
+
+6.1 Identifying inheritance situations 6m 49s
+Question: Describe in your own words what inheritance is and how it is useful when constructing classes.
+Answer: Inheritance is when we have objects are very similar but with differences. We create a parent class that that houses those similar attributes and behaviors. We then create child objects that inherit from the parent object, but are able to have those differences present as well. This allows use to establish frameworks for similar objects without having to reuse large amounts of code.
+
+6.2 Using inheritance 2m 43s
+Question: Referring to the apps on your phone, come up with three examples where you believe methods are being inherited from superclasses and called by subclasses.
+Answer:
+1. Buttons - I think reusing the same framework for buttons, the aesthetic as well as attributes of being clicked, would be inherited. Then just changing the text within them and what they do when pressed would suffice.
+2. Picture Viewer (Facebook) - When you click a picture, the view window comes up. I would imagine that this is a set framework and it just changes the image, titles etc. when a new picture is selected.
+3. Notes - When adding a note you have all the same base behaviors. You are able to add in more fields, checks, change color, or rearrange the lists; but the framework has already been established.
